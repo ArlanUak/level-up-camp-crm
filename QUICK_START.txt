@@ -1,0 +1,14 @@
+LEVEL UP CAMP OS — БЫСТРЫЙ ЗАПУСК
+
+1. Установи Node.js 22/24 LTS, если он ещё не установлен.
+2. Запусти EDIT_GEMINI_KEY.bat и вставь ключ после GEMINI_API_KEY=
+3. Запусти START_WINDOWS.bat
+
+CRM откроется по адресу http://localhost:3001
+
+ПЕРВЫЕ АККАУНТЫ:
+Админ: admin / admin123
+Препод: teacher / teacher123
+SMM: smm / smm123
+
+База создастся сама. Создавать Supabase или другую БД не нужно.

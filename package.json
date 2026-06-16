@@ -1,0 +1,41 @@
+{
+  "name": "level-up-camp-os",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "node --no-warnings --env-file-if-exists=.env server/dev-runner.mjs",
+    "dev:client": "vite",
+    "dev:server": "node --no-warnings --watch --env-file-if-exists=.env server/index.mjs",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "start": "node --no-warnings --env-file-if-exists=.env server/index.mjs",
+    "app": "npm run build && npm run start",
+    "check": "npm run lint && npm run build"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.15.15",
+    "lucide-react": "^1.18.0",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "recharts": "^3.8.1",
+    "write-excel-file": "^4.1.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^24.12.3",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^10.3.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.6.0",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "^8.59.2",
+    "vite": "^8.0.12"
+  }
+}

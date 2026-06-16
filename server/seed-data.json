@@ -1,0 +1,304 @@
+{
+  "streams": [
+    {
+      "id": "stream-1",
+      "name": "IT Camp · 15–19 июня",
+      "startDate": "2026-06-15",
+      "endDate": "2026-06-19",
+      "time": "09:00–13:00",
+      "teacher": "Арлан",
+      "capacity": 10,
+      "status": "Скоро начнётся",
+      "program": [
+        "Сайт на HTML/CSS",
+        "Мобильное приложение",
+        "3D-игра",
+        "Умный дом Arduino",
+        "Монтаж и питчинг"
+      ]
+    },
+    {
+      "id": "stream-2",
+      "name": "IT Start · Июль",
+      "startDate": "2026-07-06",
+      "endDate": "2026-07-10",
+      "time": "10:00–14:00",
+      "teacher": "Арлан",
+      "capacity": 12,
+      "status": "Набор",
+      "program": [
+        "Веб-разработка",
+        "Дизайн интерфейса",
+        "Игровая разработка",
+        "Arduino",
+        "Презентация проекта"
+      ]
+    }
+  ],
+  "students": [
+    {
+      "id": "student-1",
+      "fullName": "Амина Саги",
+      "age": 12,
+      "parentName": "Алия",
+      "parentPhone": "+7 700 111 22 33",
+      "streamId": "stream-1",
+      "status": "Обучается",
+      "price": 45000,
+      "paid": 45000,
+      "photoConsent": true,
+      "notes": "Любит дизайн и презентации",
+      "createdAt": "2026-06-01"
+    },
+    {
+      "id": "student-2",
+      "fullName": "Жансая Токпалинова",
+      "age": 13,
+      "parentName": "Мадина",
+      "parentPhone": "+7 701 222 33 44",
+      "streamId": "stream-1",
+      "status": "Обучается",
+      "price": 45000,
+      "paid": 30000,
+      "photoConsent": true,
+      "notes": "Быстро осваивает новые инструменты",
+      "createdAt": "2026-06-02"
+    },
+    {
+      "id": "student-3",
+      "fullName": "Елнар Асанадинов",
+      "age": 13,
+      "parentName": "Сауле",
+      "parentPhone": "+7 702 333 44 55",
+      "streamId": "stream-1",
+      "status": "Обучается",
+      "price": 45000,
+      "paid": 45000,
+      "photoConsent": false,
+      "notes": "Интересуется играми и Python",
+      "createdAt": "2026-06-03"
+    },
+    {
+      "id": "student-4",
+      "fullName": "Азимхан Ермек",
+      "age": 11,
+      "parentName": "Ермек",
+      "parentPhone": "+7 705 444 55 66",
+      "streamId": "stream-1",
+      "status": "Обучается",
+      "price": 35000,
+      "paid": 35000,
+      "photoConsent": true,
+      "notes": "",
+      "createdAt": "2026-06-05"
+    },
+    {
+      "id": "student-5",
+      "fullName": "Алимхан Серик",
+      "age": 10,
+      "parentName": "Серик",
+      "parentPhone": "+7 707 555 66 77",
+      "streamId": "stream-2",
+      "status": "Ожидает начала",
+      "price": 45000,
+      "paid": 20000,
+      "photoConsent": true,
+      "notes": "Первый опыт программирования",
+      "createdAt": "2026-06-10"
+    }
+  ],
+  "journal": [
+    {
+      "id": "j1",
+      "studentId": "student-1",
+      "streamId": "stream-1",
+      "date": "2026-06-15",
+      "attendance": "present",
+      "grade": 5,
+      "xp": 250,
+      "comment": "Отлично собрала структуру сайта"
+    },
+    {
+      "id": "j2",
+      "studentId": "student-2",
+      "streamId": "stream-1",
+      "date": "2026-06-15",
+      "attendance": "present",
+      "grade": 5,
+      "xp": 280,
+      "comment": "Помогала другим участникам"
+    },
+    {
+      "id": "j3",
+      "studentId": "student-3",
+      "streamId": "stream-1",
+      "date": "2026-06-15",
+      "attendance": "late",
+      "grade": 4,
+      "xp": 230,
+      "comment": "Сильная логика, нужно внимательнее с вёрсткой"
+    },
+    {
+      "id": "j4",
+      "studentId": "student-4",
+      "streamId": "stream-1",
+      "date": "2026-06-15",
+      "attendance": "present",
+      "grade": 4,
+      "xp": 200,
+      "comment": "Хороший старт"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "f1",
+      "date": "2026-06-01",
+      "type": "income",
+      "category": "Оплата лагеря",
+      "amount": 45000,
+      "streamId": "stream-1",
+      "studentId": "student-1",
+      "comment": "Полная оплата"
+    },
+    {
+      "id": "f2",
+      "date": "2026-06-02",
+      "type": "income",
+      "category": "Оплата лагеря",
+      "amount": 30000,
+      "streamId": "stream-1",
+      "studentId": "student-2",
+      "comment": "Первая часть"
+    },
+    {
+      "id": "f3",
+      "date": "2026-06-03",
+      "type": "income",
+      "category": "Оплата лагеря",
+      "amount": 45000,
+      "streamId": "stream-1",
+      "studentId": "student-3",
+      "comment": "Полная оплата"
+    },
+    {
+      "id": "f4",
+      "date": "2026-06-04",
+      "type": "expense",
+      "category": "Реклама",
+      "amount": 35000,
+      "streamId": "stream-1",
+      "comment": "Продвижение Instagram"
+    },
+    {
+      "id": "f5",
+      "date": "2026-06-05",
+      "type": "expense",
+      "category": "Материалы",
+      "amount": 18500,
+      "streamId": "stream-1",
+      "comment": "Arduino, печать, канцелярия"
+    },
+    {
+      "id": "f6",
+      "date": "2026-06-06",
+      "type": "expense",
+      "category": "Призы",
+      "amount": 27000,
+      "streamId": "stream-1",
+      "comment": "Магазин призов"
+    }
+  ],
+  "content": [
+    {
+      "id": "c1",
+      "date": "2026-06-14",
+      "platform": "Instagram",
+      "format": "Reels · монтаж",
+      "rubric": "Результат",
+      "topic": "Что ребёнок создаст за 5 дней",
+      "goal": "Продажа ближайшего потока",
+      "status": "Готово",
+      "hook": "Пять дней назад они не знали, как пишется код.",
+      "script": "Быстрый монтаж: пустой экран → сайт → приложение → игра → Arduino → выступление ребёнка.",
+      "shots": [
+        "Ребёнок открывает ноутбук",
+        "Фрагмент кода",
+        "Работающее приложение",
+        "Дверь на сервоприводе",
+        "Финальный питч"
+      ],
+      "cta": "Запишите ребёнка на следующий поток",
+      "views": 8200,
+      "leads": 9
+    },
+    {
+      "id": "c2",
+      "date": "2026-06-15",
+      "platform": "Stories",
+      "format": "Серия Stories",
+      "rubric": "Закулисье",
+      "topic": "Первое утро в лагере без постановки",
+      "goal": "Доверие родителей",
+      "status": "Нужно снять",
+      "hook": "Показываем, как всё выглядит на самом деле.",
+      "script": "6–8 коротких Stories без длинной речи: встреча детей, знакомство, первая задача, перерыв, первые результаты.",
+      "shots": [
+        "Вход детей",
+        "Бейджи",
+        "Общий план класса",
+        "Работа в парах",
+        "Мини-результат"
+      ],
+      "cta": "Следите за результатами группы"
+    },
+    {
+      "id": "c3",
+      "date": "2026-06-16",
+      "platform": "Instagram",
+      "format": "Reels · разговорный",
+      "rubric": "Боль родителей",
+      "topic": "Почему ребёнок бросает обычные курсы через месяц",
+      "goal": "Охват и заявки",
+      "status": "Идея",
+      "hook": "Проблема не всегда в ребёнке. Иногда ему просто нечего показать после урока.",
+      "script": "Арлан говорит в кадре 15–20 секунд. Между фразами — реальные работы детей и процесс занятия.",
+      "shots": [
+        "Средний план спикера",
+        "Сайт ребёнка",
+        "Ребёнок тестирует игру",
+        "Преподаватель помогает"
+      ],
+      "cta": "Напишите «ЛАГЕРЬ» — отправим программу"
+    }
+  ],
+  "marketingTasks": [
+    {
+      "id": "t1",
+      "title": "Снять первый день лагеря",
+      "dueDate": "2026-06-15",
+      "priority": "Высокий",
+      "status": "Запланировано"
+    },
+    {
+      "id": "t2",
+      "title": "Собрать 3 коротких отзыва родителей",
+      "dueDate": "2026-06-18",
+      "priority": "Средний",
+      "status": "В работе"
+    },
+    {
+      "id": "t3",
+      "title": "Смонтировать итоговый Reels потока",
+      "dueDate": "2026-06-20",
+      "priority": "Высокий",
+      "status": "Запланировано"
+    },
+    {
+      "id": "t4",
+      "title": "Занести метрики опубликованных Reels",
+      "dueDate": "2026-06-21",
+      "priority": "Низкий",
+      "status": "На согласовании"
+    }
+  ]
+}

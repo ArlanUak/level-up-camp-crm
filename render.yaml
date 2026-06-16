@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: level-up-camp-crm
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: node --no-warnings server/index.mjs
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: COOKIE_SECURE
+        value: "true"
+      - key: TURSO_DATABASE_URL
+        sync: false
+      - key: TURSO_AUTH_TOKEN
+        sync: false
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_ADMIN_IDS
+        sync: false
+      - key: TELEGRAM_TEACHER_IDS
+        sync: false
+      - key: TELEGRAM_SMM_IDS
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-3.5-flash
+      - key: GEMINI_SEARCH
+        value: "true"
