@@ -3,7 +3,7 @@ services:
     name: level-up-camp-crm
     runtime: node
     plan: free
-    buildCommand: npm ci && npm run build
+    buildCommand: npm install --no-audit --no-fund && npm run build
     startCommand: node --no-warnings server/index.mjs
     healthCheckPath: /api/health
     envVars:
